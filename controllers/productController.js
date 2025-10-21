@@ -108,6 +108,8 @@ export function deleteProduct(req,res){
 
 }
 
+//Editing the code
+
 export function updateProduct(req,res){
     if(req.user==null){
         res.status(403).json(
