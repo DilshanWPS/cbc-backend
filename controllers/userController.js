@@ -47,12 +47,6 @@ export function saveUser(req,res){
     );
 
 
-
-
-
-
-
-
     user.save()
     .then(
         ()=>{
