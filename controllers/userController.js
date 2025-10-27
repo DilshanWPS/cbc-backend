@@ -108,7 +108,8 @@ export function loginUser(req,res){
                     res.json(
                         {
                             message:"Login Successful",
-                            token:token
+                            token:token,
+                            user:userData
                         }
                     )
 
