@@ -103,7 +103,7 @@ export function loginUser(req,res){
                     console.log(userData)
 
                     //To generate the token
-                    const token=jwt.sign(userData,"random456")
+                    const token=jwt.sign(userData,process.env.JWT_KEY)
                     console.log("user successfully loggedin to the the system")
                     res.json(
                         {
